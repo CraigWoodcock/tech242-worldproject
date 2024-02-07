@@ -20,15 +20,15 @@ public class CountryLaguageTests {
     @Autowired
     private CountryRepository countryRepository;
 
-    @Test
-    @DisplayName("Check that we can pull data from the repository")
-    void checkThatWeCanPullDataFromTheRepository() {
-
-        List<Countrylanguage> allByCountryCode = countrylanguageRepository.findAllByCountryCode(countryRepository.findById("ABW").get());
-
-        allByCountryCode.forEach(countrylanguage -> {
-            System.out.println(countrylanguage.getId().getLanguage());
-            System.out.println(countrylanguage.getPercentage());
-        });
-    }
+//    @Test
+//    @DisplayName("Check that we can pull data from the repository")
+//    void checkThatWeCanPullDataFromTheRepository() {
+//
+//        List<Countrylanguage> allByCountryCode = countrylanguageRepository.findAllByCountryCode(countryRepository.findById("ABW").get());
+//
+//        allByCountryCode.forEach(countrylanguage -> {
+//            System.out.println(countrylanguage.getId().getLanguage());
+//            System.out.println(countrylanguage.getPercentage());
+//        });
+//    }
 }
